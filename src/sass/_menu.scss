@@ -1,0 +1,70 @@
+.wrapper__menu {
+  padding-bottom: 40px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-black;
+
+  .menu__list {
+    @include clearfix;
+    list-style: none;
+
+    .menu__item {
+      float:left;
+      border-right: 1px solid #000;
+
+
+      a {
+        line-height: 62px;
+        padding: 22px 41px;
+        background-color: $color-black;
+        color: $color-white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: $ubuntuCondensed;
+
+        &:hover {
+          color: $color-yellow;
+        }
+      }
+
+      .menu__item--active {
+        background-color: $color-blue;
+      }
+    }
+  }
+
+  .menu__search {
+    background-color: $color-black;
+    display: flex;
+    padding-right: 9px;
+    position: relative;
+
+    .search__input {
+      background-color: #35383c;
+      color: $color-fontFooter;
+      height: 37px;
+      width: 241px;
+      padding-left: 12px;
+      margin: auto;
+      outline: none;
+      border: 0;
+    }
+
+    .search__btn {
+      background: none;
+      border: none;
+      outline: none;
+      background-image: url(../img/search.png);
+      background-repeat: no-repeat;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      right: 12px;
+      top: 25px;
+      cursor: pointer;
+    }
+  }
+}

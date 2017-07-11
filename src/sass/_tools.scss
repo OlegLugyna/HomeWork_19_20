@@ -1,6 +1,7 @@
 //VARIABLES color_letters
 $color-blue: #248cec;
 $color-black: #2a2d32;
+$color-blackLight: #35383c;
 $color-yellow: #f4b60d;
 $color-white: #fff;
 $color-bigNumeral: #e9e9ea;
@@ -53,7 +54,7 @@ h2 {
 
 h3 {
   @extend h2;
-  font-size: 20;
+  font-size: rem(20);
 }
 
 h4 {

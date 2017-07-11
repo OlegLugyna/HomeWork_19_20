@@ -1,0 +1,59 @@
+
+
+.header {
+  width: 1161px;
+  margin: 0 auto;
+  outline: 1px solid red;
+  padding-bottom: 73px;
+
+  .header__banner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 35px;
+
+    .logo {
+      width: 214px;
+      display: block;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+
+      .logo__title {
+        font-size: rem(30);
+      }
+
+      .logo__caption {
+        font-size: rem(12);
+        font-family: $ubuntuLight;
+        letter-spacing: rem(4.6);
+      }
+    }
+
+    .header__social {
+      outline: 1px solid red;
+      display: flex;
+
+      .social__list {
+        @include clearfix;
+        list-style: none;
+        margin: auto;
+
+        .social__link {
+          float:right;
+          margin-left: 19px;
+
+
+          .social__item {
+            fill:$color-fonts;
+            width: 16px;
+            height: 16px;
+
+            &:hover {
+              fill: $color-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}

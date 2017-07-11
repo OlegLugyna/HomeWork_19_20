@@ -11,38 +11,72 @@
 </head>
 <body>
   <div class="wrapper__header">
-    <header>
+    <header class="header">
       <div class="header__banner">
         <div class="header__logo">
           <a href="#" class="header__link logo">
-            <i class="logo__badze">img/logo.png</i>
-            <div class="logo__title">Build Home</div>
-            <div class="logo__caption">indastrial theme</div>
+            <i class="logo__badze"><img src="img/logo.png" alt=""></i>
+            <div class="logo__headtitle">
+              <div class="logo__title">Build Home</div>
+              <div class="logo__caption">indastrial theme</div>
+            </div>
           </a>
         </div>
         <div class="header__social">
           <ul class="social__list">
-            <li class="social_link"></li>
-            <li class="social_link"></li>
-            <li class="social_link"></li>
-            <li class="social_link"></li>
-            <li class="social_link"></li>
+            <li class="social__link">
+              <a href="#">
+                <svg class="social__item">
+                  <use xlink:href="img/svg/fb.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__link">
+              <a href="#">
+                <svg class="social__item">
+                  <use xlink:href="img/svg/lnd.svg#lnd"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__link">
+              <a href="#">
+                <svg class="social__item">
+                  <use xlink:href="img/svg/rss.svg#rss"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__link">
+              <a href="#">
+                <svg class="social__item">
+                  <use xlink:href="img/svg/tw.svg#tw"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__link">
+              <a href="#">
+                <svg class="social__item">
+                  <use xlink:href="img/svg/fb.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
-      <nav class="header__menu">
-        <ul class="menu__list">
-          <li class="menu__item"><a href="#">Home</a></li>
-          <li class="menu__item"><a href="#">Features</a></li>
-          <li class="menu__item"><a href="#">Services</a></li>
-          <li class="menu__item"><a href="#">News</a></li>
-          <li class="menu__item"><a href="#">Shop</a></li>
-        </ul>
-        <form class="menu__search" action="#" method="post">
-          <input type="text" class="serch__input" placeholder="Search...">
-          <button class="search__btn"><span></span></button>
-        </form>
-      </nav>
+      <div class="wrapper__menu">
+        <nav class="header__menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#" class="menu__item--active">Home</a></li>
+            <li class="menu__item"><a href="#">Features</a></li>
+            <li class="menu__item"><a href="#">Services</a></li>
+            <li class="menu__item"><a href="#">News</a></li>
+            <li class="menu__item"><a href="#">Shop</a></li>
+          </ul>
+          <form class="menu__search" action="#" method="post">
+            <input type="text" class="search__input" placeholder="Search...">
+            <button class="search__btn"><span></span></button>
+          </form>
+        </nav>
+      </div>
       <figure class="header__slider">
         <div class="slider__container">
           <div class="slider_picture1"><img src="img/main_picture.png" alt="pic_workshop"></div>
@@ -60,10 +94,10 @@
           <div class="item__content">
             <i class="content__icon content__icon--gear"></i>
             <h3 class="content__caption">Power Inside</h3>
-            <div class="content__text">
-              Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique Ne
-            </div>
-            <div class="items__readMore"><span>Read More</span> &rarr;</div>
+            <p class="content__text">
+              Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique
+            </p>
+            <p class="items__readMore"><a href="#">Read More <span>&rarr;</span></a></p>
           </div>
         </section >
         <section class="items">
@@ -71,10 +105,10 @@
           <div class="item__content">
             <i class="content__icon content__icon--relay"></i>
             <h3 class="content__caption">New Technologies</h3>
-            <div class="content__text">
-              Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique Ne
-            </div>
-            <div class="items__readMore"><span>Read More</span> &rarr;</div>
+            <p class="content__text">
+              Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique
+            </p>
+            <p class="items__readMore"><a href="#">Read More <span>&rarr;</span></a></p>
           </div>
         </section >
         <section class="items">
@@ -82,10 +116,10 @@
           <div class="item__content">
             <i class="content__icon content__icon--track "></i>
             <h3 class="content__caption">Fast Suport</h3>
-            <div class="content__text">
-              Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique Ne
-            </div>
-            <div class="items__readMore"><span>Read More</span> &rarr;</div>
+            <p class="content__text">
+              Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique
+            </p>
+            <p class="items__readMore"><a href="#">Read More <span>&rarr;</span></a></p>
           </div>
         </section >
       </div>

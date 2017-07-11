@@ -1,0 +1,75 @@
+.main__wrapper-content {
+  background-color: $color-bg;
+  padding-top: 65px;
+
+  .main__content {
+    width: 1161px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      padding-bottom: 50px;
+    }
+  }
+
+  section {
+    width: 50%;
+  }
+
+  .content__news {
+    //width: 50%;
+
+    .news__block {
+      display: flex;
+      justify-content: space-between;
+
+      .news__picture {
+        position: relative;
+
+        .picture__date {
+          position: absolute;
+          top: 7px;
+          left: -9px;
+
+          .date__month {
+            background-color: $color-blue;
+            color: $color-white;
+          }
+
+          .date__number {
+            background-color: $color-yellow;
+            color: $color-fontsBlack;
+          }
+        }
+
+
+      }
+    }
+
+    .news__block--first {
+
+      i {
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-image: url(../img/design-engineer.png);
+      }
+    }
+
+    .news__block--second {
+
+      i {
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-image: url(../img/electrical-engineer-720.png);
+      }
+    }
+
+
+
+
+
+  }
+}

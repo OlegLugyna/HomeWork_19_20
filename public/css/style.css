@@ -172,3 +172,78 @@ body {
             color: #248cec; }
             .main__wrapper-offers .main__items .items .item__content .items__readMore a:hover span {
               color: #2a2b2e; }
+
+.main__wrapper-sevices {
+  background-color: #2a2d32; }
+  .main__wrapper-sevices .main__services {
+    width: 1161px;
+    margin: 0 auto;
+    padding: 50px 0 70px; }
+    .main__wrapper-sevices .main__services .title__services {
+      color: #fff; }
+    .main__wrapper-sevices .main__services .services__container {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 55px; }
+      .main__wrapper-sevices .main__services .services__container .services__picture {
+        padding-bottom: 35px; }
+      .main__wrapper-sevices .main__services .services__container .services__picture--shedule a {
+        display: block;
+        width: 260px;
+        height: 260px;
+        background-image: url(../img/our_service/shedule_service.png); }
+      .main__wrapper-sevices .main__services .services__container .services__picture--preventive a {
+        display: block;
+        width: 260px;
+        height: 260px;
+        background-image: url(../img/our_service/preventive_maintence.png); }
+      .main__wrapper-sevices .main__services .services__container .services__picture--wheel a {
+        display: block;
+        width: 260px;
+        height: 260px;
+        background-image: url(../img/our_service/wheel_service.png); }
+      .main__wrapper-sevices .main__services .services__container .services__picture--repair a {
+        display: block;
+        width: 260px;
+        height: 260px;
+        background-image: url(../img/our_service/repaire_service.png); }
+      .main__wrapper-sevices .main__services .services__container .services__caption {
+        text-align: center; }
+
+.main__wrapper-content {
+  background-color: #f7f7f7;
+  padding-top: 65px; }
+  .main__wrapper-content .main__content {
+    width: 1161px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    .main__wrapper-content .main__content h2, .main__wrapper-content .main__content h3, .main__wrapper-content .main__content h4, .main__wrapper-content .main__content h5 {
+      padding-bottom: 50px; }
+  .main__wrapper-content section {
+    width: 50%; }
+  .main__wrapper-content .content__news .news__block {
+    display: flex;
+    justify-content: space-between; }
+    .main__wrapper-content .content__news .news__block .news__picture {
+      position: relative; }
+      .main__wrapper-content .content__news .news__block .news__picture .picture__date {
+        position: absolute;
+        top: 7px;
+        left: -9px; }
+        .main__wrapper-content .content__news .news__block .news__picture .picture__date .date__month {
+          background-color: #248cec;
+          color: #fff; }
+        .main__wrapper-content .content__news .news__block .news__picture .picture__date .date__number {
+          background-color: #f4b60d;
+          color: #2a2b2e; }
+  .main__wrapper-content .content__news .news__block--first i {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/design-engineer.png); }
+  .main__wrapper-content .content__news .news__block--second i {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/electrical-engineer-720.png); }

@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
 
-    h2 {
+    .content__title {
       padding-bottom: 50px;
     }
   }
@@ -23,27 +23,34 @@
     .news__block {
       display: flex;
       justify-content: space-between;
+      padding-bottom: 32px;
+      outline: 1px solid red;
 
       .news__picture {
         position: relative;
+        margin-right: 35px;
 
         .picture__date {
           position: absolute;
-          top: 7px;
-          left: -9px;
+          top: 10px;
+          left: -20px;
 
           .date__month {
             background-color: $color-blue;
             color: $color-white;
+            width: 42px;
+            line-height: 40px;
+            text-align: center;
           }
 
           .date__number {
             background-color: $color-yellow;
             color: $color-fontsBlack;
+            width: 42px;
+            line-height: 40px;
+            text-align: center;
           }
         }
-
-
       }
     }
 
@@ -51,8 +58,8 @@
 
       i {
         display: block;
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         background-image: url(../img/design-engineer.png);
       }
     }
@@ -61,15 +68,64 @@
 
       i {
         display: block;
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         background-image: url(../img/electrical-engineer-720.png);
       }
     }
 
+    .news__content {
+      outline: 1px solid red;
 
+      .news__headline {
+        padding:8px 0 20px;
 
+        a {
+          text-decoration: none;
+          color: $color-black;
 
+          &:hover {
+            color: $color-blue;
+          }
+        }
+      }
 
+      .news__caption {
+        @include text;
+        padding-bottom: 30px;
+
+        a {
+          text-decoration: none;
+          color: $color-blue;
+        }
+      }
+
+      .news__text {
+        @include text;
+      }
+    }
   }
+
+  .content__banners {
+
+    .banners__pannel {
+
+      .pannel__headline {
+        display: flex;
+        flex-direction: row;
+
+        .headline__plus {
+          outline: 2px solid $color-bigNumeral;
+        }
+
+        .headline__text {
+          outline: 2px solid $color-bigNumeral;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+
+
 }

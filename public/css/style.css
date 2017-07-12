@@ -218,32 +218,68 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between; }
-    .main__wrapper-content .main__content h2, .main__wrapper-content .main__content h3, .main__wrapper-content .main__content h4, .main__wrapper-content .main__content h5 {
+    .main__wrapper-content .main__content .content__title {
       padding-bottom: 50px; }
   .main__wrapper-content section {
     width: 50%; }
   .main__wrapper-content .content__news .news__block {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding-bottom: 32px;
+    outline: 1px solid red; }
     .main__wrapper-content .content__news .news__block .news__picture {
-      position: relative; }
+      position: relative;
+      margin-right: 35px; }
       .main__wrapper-content .content__news .news__block .news__picture .picture__date {
         position: absolute;
-        top: 7px;
-        left: -9px; }
+        top: 10px;
+        left: -20px; }
         .main__wrapper-content .content__news .news__block .news__picture .picture__date .date__month {
           background-color: #248cec;
-          color: #fff; }
+          color: #fff;
+          width: 42px;
+          line-height: 40px;
+          text-align: center; }
         .main__wrapper-content .content__news .news__block .news__picture .picture__date .date__number {
           background-color: #f4b60d;
-          color: #2a2b2e; }
+          color: #2a2b2e;
+          width: 42px;
+          line-height: 40px;
+          text-align: center; }
   .main__wrapper-content .content__news .news__block--first i {
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-image: url(../img/design-engineer.png); }
   .main__wrapper-content .content__news .news__block--second i {
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-image: url(../img/electrical-engineer-720.png); }
+  .main__wrapper-content .content__news .news__content {
+    outline: 1px solid red; }
+    .main__wrapper-content .content__news .news__content .news__headline {
+      padding: 8px 0 20px; }
+      .main__wrapper-content .content__news .news__content .news__headline a {
+        text-decoration: none;
+        color: #2a2d32; }
+        .main__wrapper-content .content__news .news__content .news__headline a:hover {
+          color: #248cec; }
+    .main__wrapper-content .content__news .news__content .news__caption {
+      font-family: 'Arial', sans-serif;
+      font-size: 0.8125rem;
+      padding-bottom: 30px; }
+      .main__wrapper-content .content__news .news__content .news__caption a {
+        text-decoration: none;
+        color: #248cec; }
+    .main__wrapper-content .content__news .news__content .news__text {
+      font-family: 'Arial', sans-serif;
+      font-size: 0.8125rem; }
+  .main__wrapper-content .content__banners .banners__pannel .pannel__headline {
+    display: flex;
+    flex-direction: row; }
+    .main__wrapper-content .content__banners .banners__pannel .pannel__headline .headline__plus {
+      outline: 2px solid #e9e9ea; }
+    .main__wrapper-content .content__banners .banners__pannel .pannel__headline .headline__text {
+      outline: 2px solid #e9e9ea;
+      width: 100%; }

@@ -26,10 +26,12 @@ body {
   background-color: #fff;
   color: #8a8a8a; }
 
+.wrapper__header {
+  padding-top: 30px; }
+
 .header {
   width: 1161px;
   margin: 0 auto;
-  outline: 1px solid red;
   padding-bottom: 73px; }
   .header .header__banner {
     display: flex;
@@ -41,12 +43,19 @@ body {
       text-decoration: none;
       display: flex;
       justify-content: space-between; }
+      .header .header__banner .logo i {
+        display: block;
+        height: 37px;
+        width: 37px; }
       .header .header__banner .logo .logo__title {
-        font-size: 1.875rem; }
+        font-size: 1.875rem;
+        line-height: 28px; }
       .header .header__banner .logo .logo__caption {
         font-size: 0.75rem;
         font-family: "Ubuntu Light", "Arial", sans-serif, "Tahoma", sans-serif;
-        letter-spacing: 0.2875rem; }
+        letter-spacing: 3.5px;
+        line-height: 9px;
+        text-transform: uppercase; }
     .header .header__banner .header__social {
       outline: 1px solid red;
       display: flex; }

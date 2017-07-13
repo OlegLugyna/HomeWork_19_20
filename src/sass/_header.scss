@@ -1,9 +1,10 @@
-
+.wrapper__header {
+  padding-top: 30px;
+}
 
 .header {
   width: 1161px;
   margin: 0 auto;
-  outline: 1px solid red;
   padding-bottom: 73px;
 
   .header__banner {
@@ -18,14 +19,23 @@
       display: flex;
       justify-content: space-between;
 
+      i {
+        display: block;
+        height: 37px;
+        width: 37px;
+      }
+
       .logo__title {
         font-size: rem(30);
+        line-height: 28px;
       }
 
       .logo__caption {
         font-size: rem(12);
         font-family: $ubuntuLight;
-        letter-spacing: rem(4.6);
+        letter-spacing: 3.5px;
+        line-height: 9px;
+        text-transform: uppercase;
       }
     }
 

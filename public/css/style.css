@@ -20,6 +20,11 @@ h5 {
   margin: 0;
   box-sizing: border-box; }
 
+button {
+  border: none;
+  outline: none;
+  font: 0; }
+
 body {
   font-family: "Ubuntu Medium", "Arial", sans-serif, "Tahoma", sans-serif;
   overflow-x: hidden;
@@ -294,20 +299,27 @@ body {
         width: 38px;
         line-height: 39px;
         text-align: center; }
-      .main__wrapper-content .content__banners .banners__pannel .pannel__headline .headline__text {
+      .main__wrapper-content .content__banners .banners__pannel .pannel__headline .headline__btn {
         width: 100%;
         line-height: 38px;
-        padding-left: 15px; }
-    .main__wrapper-content .content__banners .banners__pannel .pannel__headline--active {
-      color: #fff;
-      background-color: #f4b60d; }
+        padding-left: 15px;
+        cursor: pointer;
+        background-color: #f7f7f7;
+        transition: 0.4s;
+        text-align: left;
+        color: #2a2d32;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-family: "Ubuntu Medium", "Arial", sans-serif, "Tahoma", sans-serif; }
+      .main__wrapper-content .content__banners .banners__pannel .pannel__headline .headline__btn.active,
+      .main__wrapper-content .content__banners .banners__pannel .pannel__headline .headline__btn:hover {
+        color: #fff;
+        background-color: #f4b60d; }
     .main__wrapper-content .content__banners .banners__pannel .pannel__text {
       font-family: 'Arial', sans-serif;
       font-size: 0.8125rem;
       padding: 20px 0 44px 38px;
       display: none; }
-    .main__wrapper-content .content__banners .banners__pannel .pannel__text--active {
-      display: block; }
 
 .main__banners {
   width: 1161px;

@@ -125,16 +125,25 @@
           text-align: center;
         }
 
-        .headline__text {
+        .headline__btn {
           width: 100%;
           line-height: 38px;
           padding-left: 15px;
+          cursor: pointer;
+          background-color: $color-bg;
+          transition:0.4s;
+          text-align: left;
+          color: $color-black;
+          text-transform: uppercase;
+          font-size: 13px;
+          font-family: $ubuntuMedium;
         }
-      }
 
-      .pannel__headline--active {
-        color: $color-white;
-        background-color: $color-yellow;
+        .headline__btn.active,
+        .headline__btn:hover {
+          color: $color-white;
+          background-color: $color-yellow;
+        }
       }
 
       .pannel__text {
@@ -143,10 +152,15 @@
         display: none;
       }
 
-      .pannel__text--active {
-        display: block;
+      // .pannel__headline--active {
+      //   color: $color-white;
+      //   background-color: $color-yellow;
+      // }
 
-      }
+      // .pannel__text--active {
+      //   display: block;
+      //
+      // }
     }
   }
 }

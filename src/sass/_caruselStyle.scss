@@ -1,0 +1,49 @@
+
+.container {
+  width: 1048px;
+  overflow: hidden;
+  float:left;
+}
+
+.carusel__list {
+  list-style: none;
+  width: 100000px;
+  position: relative;
+}
+
+.carusel__item {
+  margin-right: 25px;
+  float: left;
+  display: block;
+}
+
+.carusel__item img {
+  max-width: 1025px;
+}
+
+.header__slider {
+  @include clearfix;
+}
+
+.carusel-arrow__left,
+.carusel-arrow__right {
+  float: left;
+  padding: 5px;
+  margin-top: 170px;
+  border: 1px solid$color-fontFooter;
+  border-radius: 5px;
+}
+
+.carusel-arrow__left:hover,
+.carusel-arrow__right:hover {
+  background-color: $color-fonts;
+  color:$color-white;
+  cursor: pointer;
+}
+.carusel-arrow__left {
+  margin-right: 40px;
+}
+
+.carusel-arrow__right {
+  margin-left: 15px;
+}

@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HomeWork 19-20</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/jquery.slider.js"></script>
   <link rel="stylesheet" href="/css/fonts.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -29,7 +30,7 @@
             <li class="social__link">
               <a href="#">
                 <svg class="social__item">
-                  <use xlink:href="img/svg/fb.svg#fb"></use>
+                  <use xlink:href="img/svg/skp.svg#skp"></use>
                 </svg>
               </a>
             </li>
@@ -80,11 +81,17 @@
         </nav>
       </div>
       <figure class="header__slider">
-        <div class="slider__container">
-          <div class="slider_picture1"><img src="img/main_picture.png" alt="pic_workshop"></div>
-          <div class="slider_picture2"><img src="#" alt=""></div>
-          <div class="slider_picture3"><img src="#" alt=""></div>
+        <div class="carusel-arrow__left"><span>&#9668</span></div>
+        <div class="slider__container container">
+          <ul class="carusel__list">
+            <li class="carusel__item"><img src="img/main_picture.png" alt="pic_workshop"></li>
+            <li class="carusel__item"><img src="img/main_picture.png" alt="pic_workshop"></li>
+            <li class="carusel__item"><img src="img/main_picture.png" alt="pic_workshop"></li>
+            <li class="carusel__item"><img src="img/main_picture.png" alt="pic_workshop"></li>
+            <li class="carusel__item"><img src="img/main_picture.png" alt="pic_workshop"></li>
+          </ul>
         </div>
+        <div class="carusel-arrow__right"><span>&#9658</span></div>
       </figure>
     </header>
   </div>

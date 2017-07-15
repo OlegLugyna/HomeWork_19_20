@@ -6,7 +6,7 @@
     btn[i].onclick = function() {
       this.classList.toggle("active");
 
-      //var  panel = text.nextElementSibling;
+      //var  panel = this.nextElementSibling;
       var panel = document.getElementsByClassName('pannel__text');
       if(panel.style.display === 'block') {
         panel.style.display = "none";

@@ -1,26 +1,16 @@
-(function() {
+//(function() {
   'use strict';
-
-  // function include(url) {
-  //       var script = document.createElement('script');
-  //       script.src = url;
-  //       document.getElementsByTagName('head')[0].appendChild(script);
-  //   }
-  //
-  //   include('js/data.js');
 
   var dataJson = JSON.stringify(data);
   var dataBack = JSON.parse(dataJson);
 
   //console.log(dataBack);
 
+  arrSkills(dataBack);
+  arrName(dataBack);
+  arrFriends(dataBack);
+
   // 1. Мaссив skills всех людей, не должно быть повторящихся, отсортированы по алфавиту.
-
-
-arrSkills(dataBack);
-arrName(dataBack);
-arrFriends(dataBack);
-
 
   function arrSkills(item) {
     var skillsMap = _.map(item, 'skills');
@@ -50,4 +40,4 @@ arrFriends(dataBack);
     console.log('3) Массив всех друзей:', friendFinal);
   }
 
-})();
+//})();

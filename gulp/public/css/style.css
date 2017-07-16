@@ -74,7 +74,7 @@ body {
           height: 0; }
         .header .header__banner .header__social .social__list .social__link {
           float: right;
-          margin-left: 1.1875rem px; }
+          margin-left: 1.1875rem; }
           .header .header__banner .header__social .social__list .social__link .social__item {
             fill: #8a8a8a;
             width: 1rem;

@@ -1,24 +1,24 @@
 
 .container {
-  width: 1048px;
+  width: rem(1048);
   overflow: hidden;
   float:left;
 }
 
 .carusel__list {
   list-style: none;
-  width: 100000px;
+  width: rem(100000);
   position: relative;
 }
 
 .carusel__item {
-  margin-right: 25px;
+  margin-right: rem(25);
   float: left;
   display: block;
 }
 
 .carusel__item img {
-  max-width: 1025px;
+  max-width: rem(1025);
 }
 
 .header__slider {
@@ -28,10 +28,10 @@
 .carusel-arrow__left,
 .carusel-arrow__right {
   float: left;
-  padding: 5px;
-  margin-top: 170px;
-  border: 1px solid$color-fontFooter;
-  border-radius: 5px;
+  padding: rem(5);
+  margin-top: rem(170);
+  border: rem(1) solid$color-fontFooter;
+  border-radius: rem(5);
 }
 
 .carusel-arrow__left:hover,
@@ -41,9 +41,9 @@
   cursor: pointer;
 }
 .carusel-arrow__left {
-  margin-right: 40px;
+  margin-right: rem(40);
 }
 
 .carusel-arrow__right {
-  margin-left: 15px;
+  margin-left: rem(15);
 }

@@ -4,7 +4,7 @@
   .main__services {
     width: 1161px;
     margin: 0 auto;
-    padding: 50px 0 70px;
+    padding: rem(50) 0 rem(70);
 
 
     .title__services {
@@ -15,21 +15,25 @@
     .services__container {
       display: flex;
       justify-content: space-between;
-      padding-top: 55px;
+      padding-top: rem(55);
 
       .services__picture {
-        padding-bottom:  35px;
+        padding-bottom:  rem(35);
 
-
+        &:hover {
+          opacity: 0.3;
+        }
       }
 
       .services__picture--shedule {
 
         a {
           display: block;
-          width: 260px;
-          height: 260px;
+          width: rem(260);
+          height: rem(260);
           background-image: url(../img/our_service/shedule_service.png);
+
+
         }
       }
 
@@ -37,8 +41,8 @@
 
         a {
           display: block;
-          width: 260px;
-          height: 260px;
+          width: rem(260);
+          height: rem(260);
           background-image: url(../img/our_service/preventive_maintence.png);
         }
 
@@ -47,19 +51,18 @@
 
         a {
           display: block;
-          width: 260px;
-          height: 260px;
+          width: rem(260);
+          height: rem(260);
           background-image: url(../img/our_service/wheel_service.png);
         }
-
       }
 
       .services__picture--repair {
 
         a {
           display: block;
-          width: 260px;
-          height: 260px;
+          width: rem(260);
+          height: rem(260);
           background-image: url(../img/our_service/repaire_service.png);
         }
 

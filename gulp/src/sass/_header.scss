@@ -1,19 +1,19 @@
 .wrapper__header {
-  padding-top: 30px;
+  padding-top: rem(30);
 }
 
 .header {
   width: 1161px;
   margin: 0 auto;
-  padding-bottom: 73px;
+  padding-bottom: rem(73);
 
   .header__banner {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 35px;
+    padding-bottom: rem(35);
 
     .logo {
-      width: 214px;
+      width: rem(214);
       display: block;
       text-decoration: none;
       display: flex;
@@ -21,20 +21,20 @@
 
       i {
         display: block;
-        height: 37px;
-        width: 37px;
+        height: rem(37);
+        width: rem(37);
       }
 
       .logo__title {
         font-size: rem(30);
-        line-height: 28px;
+        line-height: rem(28);
       }
 
       .logo__caption {
         font-size: rem(12);
         font-family: $ubuntuLight;
-        letter-spacing: 3.5px;
-        line-height: 9px;
+        letter-spacing: rem(3.5);
+        line-height: rem(9);
         text-transform: uppercase;
       }
     }
@@ -49,13 +49,13 @@
 
         .social__link {
           float:right;
-          margin-left: 19px;
+          margin-left: rem(19)px;
 
 
           .social__item {
             fill:$color-fonts;
-            width: 16px;
-            height: 16px;
+            width: rem(16);
+            height: rem(16);
 
             &:hover {
               fill: $color-blue;

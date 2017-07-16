@@ -1,15 +1,15 @@
 .main__wrapper-content {
   background-color: $color-bg;
-  padding-top: 65px;
+  padding-top: rem(65);
 
   .main__content {
-    width: 1161px;
+    width: rem(1161);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 
     .content__title {
-      padding-bottom: 50px;
+      padding-bottom: rem(50);
     }
   }
 
@@ -18,35 +18,34 @@
   }
 
   .content__news {
-    //width: 50%;
 
     .news__block {
       display: flex;
       justify-content: space-between;
-      padding-bottom: 32px;
+      padding-bottom: rem(32);
 
       .news__picture {
         position: relative;
-        margin-right: 35px;
+        margin-right: rem(35);
 
         .picture__date {
           position: absolute;
-          top: 10px;
-          left: -20px;
+          top: rem(10);
+          left: rem(-20)px;
 
           .date__month {
             background-color: $color-blue;
             color: $color-white;
             width: 42px;
-            line-height: 40px;
+            line-height: rem(40)px;
             text-align: center;
           }
 
           .date__number {
             background-color: $color-yellow;
             color: $color-fontsBlack;
-            width: 42px;
-            line-height: 40px;
+            width: rem(42)px;
+            line-height: rem(40)px;
             text-align: center;
           }
         }
@@ -57,8 +56,8 @@
 
       i {
         display: block;
-        width: 150px;
-        height: 150px;
+        width: rem(150);
+        height: rem(150);
         background-image: url(../img/design-engineer.png);
       }
     }
@@ -67,8 +66,8 @@
 
       i {
         display: block;
-        width: 150px;
-        height: 150px;
+        width: rem(150);
+        height: rem(150);
         background-image: url(../img/electrical-engineer-720.png);
       }
     }
@@ -76,7 +75,7 @@
     .news__content {
 
       .news__headline {
-        padding:8px 0 14px;
+        padding: rem(8) 0 rem(14);
 
         a {
           text-decoration: none;
@@ -90,7 +89,7 @@
 
       .news__caption {
         @include text;
-        padding-bottom: 30px;
+        padding-bottom: rem(30);
 
         a {
           text-decoration: none;
@@ -105,40 +104,36 @@
   }
 
   .content__banners {
-    margin-left: 40px;
+    margin-left: rem(40);
 
     .banners__pannel {
       position: relative;
 
         .headline__btn {
           width: 100%;
-          //margin: 0 0 5px;
-          line-height: 38px;
-          padding-left: 60px;
+          line-height: rem(38);
+          padding-left: rem(60);
           cursor: pointer;
           background-color: $color-bg;
-
-
           text-align: left;
           color: $color-black;
-          border: 2px solid $color-bigNumeral;
+          border: rem(2) solid $color-bigNumeral;
           text-transform: uppercase;
-          font-size: 13px;
+          font-size: rem(13);
           font-family: $ubuntuMedium;
-          margin-bottom: 6px;
+          margin-bottom: rem(6);
           &::-webkit-details-marker {
             display: none;
           }
           &:before {
             display: block;
             position: absolute;
-            left: 20px;
-            width: 25px;
+            left: rem(20);
+            width: rem(25);
             content: '+';
-            font-size: 20px;
-            line-height: 38px;
-            border-right: 2px solid $color-bigNumeral;
-            margin-right: -2px;
+            font-size: rem(20);
+            line-height: rem(38);
+            border-right: rem(2) solid $color-bigNumeral;
           }
 
           details[open] .headline__btn:before {
@@ -158,34 +153,12 @@
 
         .pannel__text {
           @include text;
-          padding: 20px 0 44px 38px;
+          padding: rem(20) 0 rem(44) rem(38);
         }
 
         details[open] .headline__btn:before {
           content: '-';
         }
-
-
-
-
-        // .headline__btn.active,
-        // .headline__btn:hover {
-        //   color: $color-white;
-        //   background-color: $color-yellow;
-        // }
-      // }
-
-
-
-      // .pannel__headline--active {
-      //   color: $color-white;
-      //   background-color: $color-yellow;
-      // }
-
-      // .pannel__text--active {
-      //   display: block;
-      //
-      // }
     }
   }
 }

@@ -2,23 +2,23 @@
   background-color: $color-black;
 
   .footer__wrapper {
-    width: 1161px;
+    width: rem(1161);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 62px 0 70px;
+    padding: rem(62) 0 rem(70);
 
     section {
-      width: 260px;
+      width: rem(260);
 
       h5 {
-        padding-bottom: 36px;
+        padding-bottom: rem(36);
         color: $color-white;
       }
 
       div {
-        border-bottom: 1px solid $color-fontFooter;
-        padding: 14px 0;
+        border-bottom: rem(1) solid $color-fontFooter;
+        padding: rem(14) 0;
       }
 
       a {

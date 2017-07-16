@@ -288,38 +288,46 @@ body {
     font-size: 0.8125rem; }
   .main__wrapper-content .content__banners {
     margin-left: 40px; }
-    .main__wrapper-content .content__banners .banners__pannel .pannel__headline {
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 6px;
-      color: #2a2d32;
-      outline: 2px solid #e9e9ea; }
-      .main__wrapper-content .content__banners .banners__pannel .pannel__headline .headline__plus {
-        border-right: 1px solid #e9e9ea;
-        width: 38px;
-        line-height: 39px;
-        text-align: center; }
-      .main__wrapper-content .content__banners .banners__pannel .pannel__headline .headline__btn {
+    .main__wrapper-content .content__banners .banners__pannel {
+      position: relative; }
+      .main__wrapper-content .content__banners .banners__pannel .headline__btn {
         width: 100%;
         line-height: 38px;
-        padding-left: 15px;
+        padding-left: 60px;
         cursor: pointer;
         background-color: #f7f7f7;
-        transition: 0.4s;
         text-align: left;
         color: #2a2d32;
+        border: 2px solid #e9e9ea;
         text-transform: uppercase;
         font-size: 13px;
-        font-family: "Ubuntu Medium", "Arial", sans-serif, "Tahoma", sans-serif; }
-      .main__wrapper-content .content__banners .banners__pannel .pannel__headline .headline__btn.active,
-      .main__wrapper-content .content__banners .banners__pannel .pannel__headline .headline__btn:hover {
-        color: #fff;
-        background-color: #f4b60d; }
-    .main__wrapper-content .content__banners .banners__pannel .pannel__text {
-      font-family: 'Arial', sans-serif;
-      font-size: 0.8125rem;
-      padding: 20px 0 44px 38px;
-      display: none; }
+        font-family: "Ubuntu Medium", "Arial", sans-serif, "Tahoma", sans-serif;
+        margin-bottom: 6px; }
+        .main__wrapper-content .content__banners .banners__pannel .headline__btn::-webkit-details-marker {
+          display: none; }
+        .main__wrapper-content .content__banners .banners__pannel .headline__btn:before {
+          display: block;
+          position: absolute;
+          left: 20px;
+          width: 25px;
+          content: '+';
+          font-size: 20px;
+          line-height: 38px;
+          border-right: 2px solid #e9e9ea;
+          margin-right: -2px; }
+        .main__wrapper-content .content__banners .banners__pannel .headline__btn details[open] .headline__btn:before {
+          content: '-'; }
+        .main__wrapper-content .content__banners .banners__pannel .headline__btn:hover, .main__wrapper-content .content__banners .banners__pannel .headline__btn:focus {
+          transition: 0.4s;
+          background-color: #f4b60d;
+          color: #fff;
+          outline: none; }
+      .main__wrapper-content .content__banners .banners__pannel .pannel__text {
+        font-family: 'Arial', sans-serif;
+        font-size: 0.8125rem;
+        padding: 20px 0 44px 38px; }
+      .main__wrapper-content .content__banners .banners__pannel details[open] .headline__btn:before {
+        content: '-'; }
 
 .main__banners {
   width: 1161px;

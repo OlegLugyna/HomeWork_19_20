@@ -108,49 +108,74 @@
     margin-left: 40px;
 
     .banners__pannel {
-
-      .pannel__headline {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 6px;
-        color: $color-black;
-        outline: 2px solid $color-bigNumeral;
-
-
-
-        .headline__plus {
-          border-right: 1px solid $color-bigNumeral;
-          width: 38px;
-          line-height: 39px;
-          text-align: center;
-        }
+      position: relative;
 
         .headline__btn {
           width: 100%;
+          //margin: 0 0 5px;
           line-height: 38px;
-          padding-left: 15px;
+          padding-left: 60px;
           cursor: pointer;
           background-color: $color-bg;
-          transition:0.4s;
+
+
           text-align: left;
           color: $color-black;
+          border: 2px solid $color-bigNumeral;
           text-transform: uppercase;
           font-size: 13px;
           font-family: $ubuntuMedium;
+          margin-bottom: 6px;
+          &::-webkit-details-marker {
+            display: none;
+          }
+          &:before {
+            display: block;
+            position: absolute;
+            left: 20px;
+            width: 25px;
+            content: '+';
+            font-size: 20px;
+            line-height: 38px;
+            border-right: 2px solid $color-bigNumeral;
+            margin-right: -2px;
+          }
+
+          details[open] .headline__btn:before {
+            content: '-';
+          }
+
+          &:hover,
+          &:focus {
+            transition:0.4s;
+            background-color: $color-yellow;
+            color: $color-white;
+            outline: none;
+
+          }
+
         }
 
-        .headline__btn.active,
-        .headline__btn:hover {
-          color: $color-white;
-          background-color: $color-yellow;
+        .pannel__text {
+          @include text;
+          padding: 20px 0 44px 38px;
         }
-      }
 
-      .pannel__text {
-        @include text;
-        padding: 20px 0 44px 38px;
-        display: none;
-      }
+        details[open] .headline__btn:before {
+          content: '-';
+        }
+
+
+
+
+        // .headline__btn.active,
+        // .headline__btn:hover {
+        //   color: $color-white;
+        //   background-color: $color-yellow;
+        // }
+      // }
+
+
 
       // .pannel__headline--active {
       //   color: $color-white;

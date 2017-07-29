@@ -1,0 +1,76 @@
+.main__wrapper-offers {
+  padding-bottom: rem(88);
+
+  .main__items {
+    width: rem(1161);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .items {
+      display: flex;
+      justify-content: space-between;
+
+      .item__bigNumeral {
+        font-size: rem(90);
+        margin-right: rem(35);
+        color:$color-bigNumeral;
+      }
+
+      .item__content {
+        width: rem(235);
+        //padding-left: 40px;
+
+        .content__caption {
+          padding: rem(20) 0 rem(29);
+        }
+
+        .content__text {
+          @include text;
+          padding-bottom: rem(26);
+        }
+
+        .content__icon {
+          display: block;
+          width: rem(36);
+          height: rem(36);
+          background-image: url(../img/icon_sprite.png);
+          background-repeat: no-repeat;
+        }
+
+        .content__icon--relay {
+          background-position: center;
+        }
+
+        .content__icon--track {
+          background-position: right;
+        }
+
+        .items__readMore {
+
+          a {
+            font-family: $ubuntuMedium;
+            font-size: rem(13);
+            text-decoration: none;
+            color: $color-fontsBlack;
+            span {
+              color: $color-blue;
+              &:hover {
+                color: $color-fontsBlack;
+                span {
+                  color: $color-blue;
+                }
+              }
+            }
+            &:hover {
+              color: $color-blue;
+              span {
+                color: $color-fontsBlack;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

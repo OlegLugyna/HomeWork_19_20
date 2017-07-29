@@ -1,0 +1,78 @@
+.main__wrapper-sevices {
+  background-color:  $color-black;
+
+  .main__services {
+    width: 1161px;
+    margin: 0 auto;
+    padding: rem(50) 0 rem(70);
+
+
+    .title__services {
+      color: $color-white
+    }
+
+
+    .services__container {
+      display: flex;
+      justify-content: space-between;
+      padding-top: rem(55);
+
+      .services__picture {
+        padding-bottom:  rem(35);
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+
+      .services__picture--shedule {
+
+        a {
+          display: block;
+          width: rem(260);
+          height: rem(260);
+          background-image: url(../img/our_service/shedule_service.png);
+        }
+      }
+
+      .services__picture--preventive {
+
+        a {
+          display: block;
+          width: rem(260);
+          height: rem(260);
+          background-image: url(../img/our_service/preventive_maintence.png);
+        }
+
+      }
+      .services__picture--wheel {
+
+        a {
+          display: block;
+          width: rem(260);
+          height: rem(260);
+          background-image: url(../img/our_service/wheel_service.png);
+        }
+      }
+
+      .services__picture--repair {
+
+        a {
+          display: block;
+          width: rem(260);
+          height: rem(260);
+          background-image: url(../img/our_service/repaire_service.png);
+        }
+
+      }
+
+      .services__caption {
+        text-align: center;
+      }
+
+
+
+
+    }
+  }
+}

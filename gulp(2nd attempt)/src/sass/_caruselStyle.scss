@@ -1,0 +1,49 @@
+
+.container {
+  width: rem(1048);
+  overflow: hidden;
+  float:left;
+}
+
+.carusel__list {
+  list-style: none;
+  width: rem(100000);
+  position: relative;
+}
+
+.carusel__item {
+  margin-right: rem(25);
+  float: left;
+  display: block;
+}
+
+.carusel__item img {
+  max-width: rem(1025);
+}
+
+.header__slider {
+  @include clearfix;
+}
+
+.carusel-arrow__left,
+.carusel-arrow__right {
+  float: left;
+  padding: rem(5);
+  margin-top: rem(170);
+  border: rem(1) solid$color-fontFooter;
+  border-radius: rem(5);
+}
+
+.carusel-arrow__left:hover,
+.carusel-arrow__right:hover {
+  background-color: $color-fonts;
+  color:$color-white;
+  cursor: pointer;
+}
+.carusel-arrow__left {
+  margin-right: rem(40);
+}
+
+.carusel-arrow__right {
+  margin-left: rem(15);
+}

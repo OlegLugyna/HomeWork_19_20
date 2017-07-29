@@ -1,0 +1,105 @@
+.footer {
+  background-color: $color-black;
+
+  .footer__wrapper {
+    width: rem(1161);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: rem(62) 0 rem(70);
+
+    section {
+      width: rem(260);
+
+      h5 {
+        padding-bottom: rem(36);
+        color: $color-white;
+      }
+
+      div {
+        border-bottom: rem(1) solid $color-fontFooter;
+        padding: rem(14) 0;
+      }
+
+      a {
+        @include text;
+        text-decoration: none;
+        color: $color-fonts;
+        &:hover {
+          color: $color-blue;
+        }
+      }
+    }
+
+    .last__item {
+      border: 0;
+    }
+  }
+}
+
+.footer__bottom-wrapper {
+  background-color: $color-blackLight;
+
+  .footer__bottom {
+    @include text;
+    font-size: 12px;
+    width: 1161px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 60px;
+
+    .footer__bottom-contacts {
+      display: flex;
+      flex-wrap: wrap;
+
+      i {
+        display: block;
+        width: 16px;
+        height: 20px;
+        background-image: url('../img/sprite__footer.png');
+        background-repeat: no-repeat;
+      }
+
+      .bottom__text {
+        padding: 0 36px 0 12px;
+      }
+
+      .bottom-adress {
+        display: flex;
+        justify-content: space-between;
+
+        .bottom-adress__icon {
+          margin: auto;
+          background-position: -1px 0;
+        }
+      }
+
+      .bottom-tlf {
+        display: flex;
+        justify-content: space-between;
+
+        .bottom-tlf__icon {
+          margin: auto;
+          background-position: -16px 0;
+        }
+      }
+
+      .bottom-email {
+        display: flex;
+        justify-content: space-between;
+
+        .bottom-email__icon {
+          margin: auto;
+          background-position: -32px 0;
+            width: 22px;
+        }
+      }
+    }
+
+    .footer__copyright {
+      width: 30%;
+      text-align: center;
+    }
+  }
+}

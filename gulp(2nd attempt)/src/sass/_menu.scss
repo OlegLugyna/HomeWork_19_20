@@ -1,0 +1,70 @@
+.wrapper__menu {
+  padding-bottom: rem(40);
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-black;
+
+  .menu__list {
+    @include clearfix;
+    list-style: none;
+
+    .menu__item {
+      float:left;
+      border-right: rem(1) solid #000;
+
+
+      a {
+        line-height: rem(62);
+        padding: rem(22) rem(41);
+        background-color: $color-black;
+        color: $color-white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: $ubuntuCondensed;
+
+        &:hover {
+          color: $color-yellow;
+        }
+      }
+
+      .menu__item--active {
+        background-color: $color-blue;
+      }
+    }
+  }
+
+  .menu__search {
+    background-color: $color-black;
+    display: flex;
+    padding-right: rem(9);
+    position: relative;
+
+    .search__input {
+      background-color: #35383c;
+      color: $color-fontFooter;
+      height: rem(37);
+      width: rem(241);
+      padding-left: rem(12);
+      margin: auto;
+      outline: none;
+      border: 0;
+    }
+
+    .search__btn {
+      background: none;
+      border: none;
+      outline: none;
+      background-image: url(../img/search.png);
+      background-repeat: no-repeat;
+      width: rem(15);
+      height: rem(15);
+      position: absolute;
+      right: rem(12);
+      top: rem(25);
+      cursor: pointer;
+    }
+  }
+}

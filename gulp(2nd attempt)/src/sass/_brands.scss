@@ -1,0 +1,45 @@
+.main__banners {
+  width: rem(1161);
+  margin: 0 auto;
+  padding: rem(100) 0;
+
+  .banners__container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: rem(40);
+    .banners__item {
+      display: block;
+      width: rem(117);
+      height: rem(60);
+      background-image: url('../img/sprite_brands.png');
+      background-repeat: no-repeat;
+    }
+
+    .banners__item--1 {
+      background-position: rem(-13) rem(-12);
+    }
+
+    .banners__item--2 {
+      background-position: rem(-209) rem(-12);
+    }
+
+    .banners__item--3 {
+      background-position: rem(-420) rem(-12);
+      width: 158px;
+    }
+
+    .banners__item--4 {
+      background-position: rem(-648) rem(-12);
+    }
+
+    .banners__item--5 {
+      background-position: rem(-850) rem(-12);
+      width: rem(122);
+
+    }
+    .banners__item--6 {
+      background-position: rem(-1045) rem(-12);
+      width: rem(90);
+    }
+  }
+}

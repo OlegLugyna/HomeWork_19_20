@@ -1,0 +1,71 @@
+//VARIABLES color_letters
+$color-blue: #248cec;
+$color-black: #2a2d32;
+$color-logo: #434343;
+$color-logoCaption: #9d9d9d;
+$color-blackLight: #35383c;
+$color-yellow: #f4b60d;
+$color-white: #fff;
+$color-bigNumeral: #e9e9ea;
+$color-fontsBlack: #2a2b2e;
+$color-fonts: #8a8a8a;
+$color-bg: #f7f7f7;
+$color-footer: #35383c;
+$color-fontFooter: #5d6063;
+$color-slogan: rgba(23,27,31,.9);
+
+//VARIABLES FONTS
+$ubuntuMedium:'Ubuntu Medium', 'Arial', sans-serif, 'Tahoma', sans-serif;
+$ubuntuLight:'Ubuntu Light', 'Arial', sans-serif, 'Tahoma', sans-serif;
+$ubuntuCondensed:'Ubuntu Condensed', 'Arial', sans-serif, 'Tahoma', sans-serif;
+
+//MIXINS
+@mixin clearfix {
+            &:after {
+              display: block;
+              content: '';
+              clear: both;
+              visibility: hidden;
+              height: 0;
+            }
+}
+
+@mixin text {
+  font-family: 'Arial', sans-serif;
+  font-size: rem(13);
+}
+
+
+//FUNCTIONS
+
+@function rem($px) {
+  $rems: $px / 16;
+  @return #{$rems}rem;
+}
+
+//STYLES
+.bigNumeral {
+  font-size: rem(90);
+  color: $color-bigNumeral;
+}
+
+h2 {
+  color: $color-black;
+  font-size: rem(24);
+}
+
+h3 {
+  @extend h2;
+  font-size: rem(20);
+}
+
+h4 {
+  @extend h2;
+  font-size: rem(16);
+}
+
+h5 {
+  @extend h4;
+  text-transform: uppercase;
+
+}

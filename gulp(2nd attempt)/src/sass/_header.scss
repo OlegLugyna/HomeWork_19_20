@@ -1,0 +1,70 @@
+.wrapper__header {
+  padding-top: rem(30);
+}
+
+.header {
+  width: 1161px;
+  margin: 0 auto;
+  padding-bottom: rem(73);
+
+  .header__banner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: rem(35);
+
+    .logo {
+      width: rem(214);
+      display: block;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+
+      i {
+        display: block;
+        height: rem(37);
+        width: rem(37);
+      }
+
+      .logo__title {
+        font-size: rem(30);
+        line-height: rem(28);
+        color: $color-logo;
+      }
+
+      .logo__caption {
+        font-size: rem(12);
+        font-family: $ubuntuLight;
+        letter-spacing: rem(3.5);
+        line-height: rem(9);
+        text-transform: uppercase;
+        color: $color-logoCaption;
+      }
+    }
+
+    .header__social {
+      display: flex;
+
+      .social__list {
+        @include clearfix;
+        list-style: none;
+        margin: auto;
+
+        .social__link {
+          float:right;
+          margin-left: rem(19);
+
+
+          .social__item {
+            fill:$color-fonts;
+            width: rem(16);
+            height: rem(16);
+
+            &:hover {
+              fill: $color-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}

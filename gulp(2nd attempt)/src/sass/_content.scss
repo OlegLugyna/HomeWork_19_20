@@ -1,0 +1,164 @@
+.main__wrapper-content {
+  background-color: $color-bg;
+  padding-top: rem(65);
+
+  .main__content {
+    width: rem(1161);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .content__title {
+      padding-bottom: rem(50);
+    }
+  }
+
+  section {
+    width: 50%;
+  }
+
+  .content__news {
+
+    .news__block {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: rem(32);
+
+      .news__picture {
+        position: relative;
+        margin-right: rem(35);
+
+        .picture__date {
+          position: absolute;
+          top: rem(10);
+          left: rem(-20)px;
+
+          .date__month {
+            background-color: $color-blue;
+            color: $color-white;
+            width: 42px;
+            line-height: rem(40)px;
+            text-align: center;
+          }
+
+          .date__number {
+            background-color: $color-yellow;
+            color: $color-fontsBlack;
+            width: rem(42)px;
+            line-height: rem(40)px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .news__block--first {
+
+      i {
+        display: block;
+        width: rem(150);
+        height: rem(150);
+        background-image: url(../img/design-engineer.png);
+      }
+    }
+
+    .news__block--second {
+
+      i {
+        display: block;
+        width: rem(150);
+        height: rem(150);
+        background-image: url(../img/electrical-engineer-720.png);
+      }
+    }
+
+    .news__content {
+
+      .news__headline {
+        padding: rem(8) 0 rem(14);
+
+        a {
+          text-decoration: none;
+          color: $color-black;
+
+          &:hover {
+            color: $color-blue;
+          }
+        }
+      }
+
+      .news__caption {
+        @include text;
+        padding-bottom: rem(30);
+
+        a {
+          text-decoration: none;
+          color: $color-blue;
+        }
+      }
+
+      .news__text {
+        @include text;
+      }
+    }
+  }
+
+  .content__banners {
+    margin-left: rem(40);
+
+    .banners__pannel {
+      position: relative;
+
+        .headline__btn {
+          width: 100%;
+          line-height: rem(38);
+          padding-left: rem(60);
+          cursor: pointer;
+          background-color: $color-bg;
+          text-align: left;
+          color: $color-black;
+          border: rem(2) solid $color-bigNumeral;
+          text-transform: uppercase;
+          font-size: rem(13);
+          font-family: $ubuntuMedium;
+          margin-bottom: rem(6);
+          &::-webkit-details-marker {
+            display: none;
+          }
+          &:before {
+            display: block;
+            position: absolute;
+            left: rem(20);
+            width: rem(25);
+            content: '+';
+            font-size: rem(20);
+            line-height: rem(38);
+            border-right: rem(2) solid $color-bigNumeral;
+          }
+
+          details[open] .headline__btn:before {
+            content: '-';
+          }
+
+          &:hover,
+          &:focus {
+            transition:0.4s;
+            background-color: $color-yellow;
+            color: $color-white;
+            outline: none;
+
+          }
+
+        }
+
+        .pannel__text {
+          @include text;
+          padding: rem(20) 0 rem(44) rem(38);
+        }
+
+        details[open] .headline__btn:before {
+          content: '-';
+        }
+    }
+  }
+}

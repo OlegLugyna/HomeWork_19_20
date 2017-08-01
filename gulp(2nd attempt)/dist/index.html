@@ -8,6 +8,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <!-- <script src="js/jquery.slider.js"></script> -->
   <!-- <link rel="stylesheet" href="/css/fonts.css"> -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -81,25 +83,21 @@
         </nav>
       </div>
       <figure class="header__slider">
-        <div class="carusel-arrow__left"><span>&#9668</span></div>
-        <div class="slider__container container">
-          <ul class="carusel__list">
-            <li class="carusel__item"><img src="img/main_picture.png" alt="pic_workshop"></li>
-            <li class="carusel__item"><img src="img/main_picture.png" alt="pic_workshop"></li>
-            <li class="carusel__item"><img src="img/main_picture.png" alt="pic_workshop"></li>
-            <li class="carusel__item"><img src="img/main_picture.png" alt="pic_workshop"></li>
-            <li class="carusel__item"><img src="img/main_picture.png" alt="pic_workshop"></li>
-          </ul>
-        </div>
-        <div class="carusel-arrow__right"><span>&#9658</span></div>
+        <section class="regular slider">
+          <div><img src="img/main_picture.png"></div>
+          <div><img src="img/main_picture.png"></div>
+          <div><img src="img/main_picture.png"></div>
+          <div><img src="img/main_picture.png"></div>
+          <div><img src="img/main_picture.png"></div>
+        </section>
       </figure>
     </header>
   </div>
   <main>
-    <div class="main__wrapper-offers">
+    <div class="main__wrapper">
       <div class="main__items">
         <section class="items">
-          <div class="item__bigNumeral">01</div>
+          <div class="item__numeral">01</div>
           <div class="item__content">
             <i class="content__icon content__icon--gear"></i>
             <h3 class="content__caption">Power Inside</h3>
@@ -109,8 +107,8 @@
             <p class="items__readMore"><a href="#">Read More <span>&rarr;</span></a></p>
           </div>
         </section >
-        <section class="items">
-          <div class="item__bigNumeral">02</div>
+        <section class="block__items items">
+          <div class="item__numeral">02</div>
           <div class="item__content">
             <i class="content__icon content__icon--relay"></i>
             <h3 class="content__caption">New Technologies</h3>
@@ -121,7 +119,7 @@
           </div>
         </section >
         <section class="items">
-          <div class="item__bigNumeral">03</div>
+          <div class="item__numeral">03</div>
           <div class="item__content">
             <i class="content__icon content__icon--track "></i>
             <h3 class="content__caption">Fast Suport</h3>
@@ -241,7 +239,6 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-
       <section class="footer__social">
       <h5>social</h5>
       <div><a href="#">Facebook</a></div>
@@ -294,7 +291,7 @@
     </div>
 
 
-
+  <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

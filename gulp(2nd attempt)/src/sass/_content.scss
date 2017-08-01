@@ -31,21 +31,21 @@
         .picture__date {
           position: absolute;
           top: rem(10);
-          left: rem(-20)px;
+          left: rem(-20);
 
           .date__month {
             background-color: $color-blue;
             color: $color-white;
-            width: 42px;
-            line-height: rem(40)px;
+            width: rem(42);
+            line-height: rem(40);
             text-align: center;
           }
 
           .date__number {
             background-color: $color-yellow;
             color: $color-fontsBlack;
-            width: rem(42)px;
-            line-height: rem(40)px;
+            width: rem(42);
+            line-height: rem(40);
             text-align: center;
           }
         }

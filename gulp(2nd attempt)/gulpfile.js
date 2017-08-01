@@ -22,6 +22,7 @@ var paths = {
     js: 'src/js/**/*.js',
     fonts: 'src/fonts/**/*.*',
     img: 'src/img/**/*.+(png|jpg|gif|svg)',
+	
   },
 
   dist: {
@@ -34,7 +35,7 @@ var paths = {
   watch: {
     html: 'src/**/*.html'
   },
-  clean: './dist'
+  clean: './css'
 };
 
 // конфигурация сервера
